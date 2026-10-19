@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecnologia e Inovação em Saúde</title>
+<style>
+:root {
+--primary-color: #0077b6;
+--secondary-color: #00b4d8;
+--accent-color: #2ec4b6;
+--bg-color: #f8f9fa;
+--text-color: #2b2d42;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+line-height: 1.6;
+}
+
+header {
+background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+color: white;
+padding: 3rem 1rem;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+}
+
+header p {
+font-size: 1.2rem;
+opacity: 0.9;
+}
+
+container {
+max-width: 1000px;
+margin: 2rem auto;
+padding: 0 1rem;
+display: block;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 2rem;
+color: var(--primary-color);
+font-size: 1.8rem;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+margin-bottom: 3rem;
+}
+
+.card {
+background: white;
+border-radius: 12px;
+padding: 1.5rem;
+box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+color: var(--primary-color);
+margin-bottom: 0.8rem;
+}
+
+.form-container {
+background: white;
+padding: 2rem;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+max-width: 600px;
+margin: 0 auto 3rem auto;
+}
+
+.form-group {
+margin-bottom: 1.2rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+width: 100%;
+padding: 0.8rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+}
+
+.btn-submit {
+width: 100%;
+background-color: #25D366;
+color: white;
+border: none;
+padding: 1rem;
+font-size: 1.1rem;
+font-weight: bold;
+border-radius: 6px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+background-color: #128C7E;
+}
+
+footer {
+text-align: center;
+padding: 1.5rem;
+background-color: var(--primary-color);
+color: white;
+margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Tecnologia e Inovação em Saúde</h1>
+<p>Transformando cuidados de saúde através de soluções digitais avançadas</p>
+</header>
+
+<container>
+<h2 class="section-title">Nossos Pilares de Inovação</h2>
+<div class="grid">
+<div class="card">
+<h3>Telemedicina e Conectividade</h3>
+<p>Aproximando pacientes e especialistas por meio de consultas virtuais seguras e acessíveis em qualquer lugar.</p>
+</div>
+<div class="card">
+<h3>Inteligência Artificial</h3>
+<p>Suporte ao diagnóstico preciso e análise preditiva para tratamentos personalizados e mais eficientes.</p>
+</div>
+<div class="card">
+<h3>Gestão e Prontuário Digital</h3>
+<p>Sistemas integrados para otimização do atendimento e segurança total no armazenamento dos dados do paciente.</p>
+</div>
+</div>
+
+<div class="form-container">
+<h2 class="section-title" style="margin-bottom: 1rem;">Entre em Contato via WhatsApp</h2>
+<form id="whatsappForm">
+<div class="form-group">
+<label for="nome">Nome Completo:</label>
+<input type="text" id="nome" required placeholder="Digite seu nome">
+</div>
+
+<div class="form-group">
+<label for="assunto">Assunto do Projeto:</label>
+<select id="assunto">
+<option value="Dúvidas sobre o Projeto">Dúvidas sobre o Projeto</option>
+<option value="Parceria de Inovação">Parceria de Inovação</option>
+<option value="Agendamento/Atendimento">Agendamento / Atendimento</option>
+<option value="Outros">Outros</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" rows="4" required placeholder="Escreva os detalhes da sua mensagem..."></textarea>
+</div>
+
+<button type="submit" class="btn-submit">
+Enviar para o WhatsApp
+</button>
+</form>
+</div>
+</container>
+
+<footer>
+<p>© 2026 Tecnologia e Inovação em Saúde. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+e.preventDefault();
+
+const numeroTelefone = "5592993351939"; // Número com código do país (55)
+const nome = document.getElementById('nome').value;
+const assunto = document.getElementById('assunto').value;
+const mensagem = document.getElementById('mensagem').value;
+
+const texto = *Contato do Site - Inovação em Saúde*%0A%0A +
+*Nome:* ${encodeURIComponent(nome)}%0A+Assunto:${encodeURIComponent(assunto)}%0A +
+*Mensagem:* ${encodeURIComponent(mensagem)}`;
+
+const url = https://wa.me/${numeroTelefone}?text=${texto}`;
+window.open(url, '_blank');
+});
+</script>
+
+</body>
+  </html>
